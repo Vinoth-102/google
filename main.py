@@ -27,11 +27,8 @@ def hello():
     celsius = 47
     fahrenheit = (celsius * 1.8) + 32
     n=print('%.2f Celsius is equivalent to: %.2f Fahrenheit'% (celsius, fahrenheit))
-
     return n
-
-
-if __name__ == "__main__":
+hello()
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app. You
     # can configure startup instructions by adding `entrypoint` to app.yaml.
