@@ -24,12 +24,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    """Return a friendly HTTP greeting.
+    celsius = 47
+    fahrenheit = (celsius * 1.8) + 32
+    n=print('%.2f Celsius is equivalent to: %.2f Fahrenheit'% (celsius, fahrenheit))
 
-    Returns:
-        A string with the words 'Hello World!'.
-    """
-    return "Hello World!"
+    return n
 
 
 if __name__ == "__main__":
